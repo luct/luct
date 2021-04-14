@@ -1,0 +1,7 @@
+CUSTOMER_ID,DATE_REGISTER,LOGIN,FIRST_NAME,LAST_NAME,EMAIL,SHIP_ADDRESS
+1,10.02.21,login_1,Jhon, Kirkan,email_1@email.com,
+2,11.02.21,login_2,Halk, Hogan,email_2@email.com,
+3,12.02.21,login_3,Ann, Lee,email_3@email.com,
+4,14.02.21,login_4,Andy, MacQween,email_4@email.com,
+5,15.02.21,login_5,Andry, Zucker,email_5@email.com,
+7,16.02.21,login_6,Bob, Dylan,email_6@email.com,
