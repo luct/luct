@@ -1,0 +1,8 @@
+create table glazunov_dv_products
+(
+    product_id NUMBER(6) constraint glazunov_dv_pk_prod_id primary key,
+    price NUMBER(6,2) constraint glazunov_dv_nn_pr not null
+    constraint glazunov_dv_ch_pr CHECK (price >= 0),
+    name VARCHAR2(20) constraint glazunov_dv_nn_nm not null,
+    descriptions VARCHAR2(20) constraint glazunov_dv_nn_ds not null
+)

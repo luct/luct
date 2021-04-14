@@ -1,0 +1,14 @@
+create or replace view glazunov_dv_sales 
+as
+select  emp.first_name
+        , emp.last_name
+        , emp.job_id
+        , emp.salary
+        , emp.department_id
+        , prd.name 
+        , ord.qty
+        , prd.price
+        , ord.qty*prd.price summ
+from    glazunov_dv_orders ord 
+        left join glazunov_dv_employees emp ON ord.employee_id = emp.employee_id
+        left join glazunov_dv_products prd ON prd.product_id = ord.product_id 

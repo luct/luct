@@ -1,0 +1,11 @@
+create table glazunov_dv_orders
+(
+    order_id NUMBER(6)constraint glazunov_dv_pk_ord_id primary key,
+    employee_id NUMBER(6)constraint glazunov_dv_fk_emp_id 
+    references glazunov_dv_employees(employee_id),
+    order_date DATE constraint glazunov_dv_nn_dt not null,
+    product_id NUMBER(6) constraint glazunov_dv_fk_prod_id
+    references glazunov_dv_products(product_id), 
+    qty NUMBER(10) constraint glazunov_dv_nn_qty not null,
+    customer_id NUMBER(6)
+)

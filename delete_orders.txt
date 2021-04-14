@@ -1,0 +1,5 @@
+begin
+ delete glazunov_dv_orders;
+ commit;
+end;
+  

@@ -1,0 +1,10 @@
+create table glazunov_dv_customers
+(
+    customer_id NUMBER(6)constraint glazunov_dv_pk_cust_id primary key,
+    date_register DATE constraint glazunov_dv_nn_dr not null,
+    login VARCHAR2(20) constraint glazunov_dv_nn_l not null,
+    first_name VARCHAR2(20),
+    last_name VARCHAR2(25),
+    email VARCHAR2(20) constraint glazunov_dv_nn_em not null
+    constraint glazunov_dv_uq_em unique
+)

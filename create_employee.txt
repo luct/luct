@@ -1,0 +1,11 @@
+create table glazunov_dv_employees
+(
+    employee_id NUMBER(6) constraint glazunov_dv_pk_imp_id primary key,
+    first_name VARCHAR2(20),
+    last_name VARCHAR2(25) constraint glazunov_dv_nn_ln not null,
+    hire_date DATE constraint glazunov_dv_nn_hd not null,
+    job_id VARCHAR2(10) constraint glazunov_dv_nn_ji not null,
+    salary NUMBER(8,2),
+    manager_id NUMBER(6),
+    department_id NUMBER(4)
+)
